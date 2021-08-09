@@ -9,4 +9,4 @@ const getCategories = categories => {
   });
 }
 
-getCategories(categoryEl);
+getCategories(categoriesEl);

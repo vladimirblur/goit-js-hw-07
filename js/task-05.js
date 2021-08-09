@@ -4,6 +4,11 @@ const refs = {
 };
 const { input, output } = refs;
 
-const handleShowNameInput = (event) => output.textContent = event.currentTarget.value;
+const handleShowNameInput = (event) => {
+  output.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === "") {
+    output.textContent = "Незнакомец"
+  }
+};
 
 input.addEventListener('input', handleShowNameInput);
